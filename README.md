@@ -21,7 +21,7 @@ Invaild input in case of k<0 and scale is not in the range (0,200]
 Commands to Enter:
 (some of the commands groupid can be used as 0 then the infromation requested will be about all players from all the groups)
 
-# ---MergeGroups <GroupId1> <GroupId2>---
+## MergeGroups GroupId1 GroupId2
 
 merges the two groups into one group and all the players in the two groups are in the same group now
 
@@ -33,7 +33,7 @@ or GroupId1>k and/or GroupIdk>k
 
 
 
-## addPlayer <playerid> <groupid> <score>
+## addPlayer playerid groupid score
 
 adds a player with playerid to the group with group id with the given score and starts with level 1
 
@@ -48,7 +48,7 @@ if the player id <=0
 
 FALIURE: if A player with the same ID already exists.
 
-increasePlayerIDLevel <PlayerID> <LevelIncrease>:
+## increasePlayerIDLevel PlayerID LevelIncrease:
 
 increases the player to a currentlevel + LevelIncrease
 
@@ -61,7 +61,7 @@ if the LevelIncrease <=0
 
 FALIURE: if A player with the same ID does not exist.
 
-# ---changePlayerIDScore  <PlayerID> <NewScore>---
+## changePlayerIDScore  PlayerID NewScore
 
 changes the player id score to newscore
 
@@ -74,7 +74,7 @@ if the NewScore <=0 or >scale
 
 FALIURE: if A player with the same ID does not exist.
 
-# ---getPercentOfPlayersWithScoreInBounds <GroupId> <score> <lowerLevel> <higherLevel>---
+## getPercentOfPlayersWithScoreInBounds GroupId score lowerLevel higherLevel
 
 returns the precentage of players with the score equal to score that are between lowerlevel and higherlevel in the group with the given id
 
@@ -84,7 +84,7 @@ INVALID_INPUT:
 
 if groupdid >k or <= 0
 
-# ---averageHighestPlayerLevelByGroup <GroupID> <m> <avgLevel>---
+## averageHighestPlayerLevelByGroup GroupID m avgLevel
 
 returns the average player level of the highest m players
 
@@ -97,7 +97,7 @@ if m<=0
 FALIURE: if the number of players in the group is smaller than m 
 
 
-# ---Quit----
+## Quit
 will terminate the game.
 
 
