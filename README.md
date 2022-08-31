@@ -33,7 +33,7 @@ or GroupId1>k and/or GroupIdk>k
 
 
 
-# ---addPlayer <playerid> <groupid> <score>---
+## addPlayer <playerid> <groupid> <score>
 
 adds a player with playerid to the group with group id with the given score and starts with level 1
 
